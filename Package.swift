@@ -15,6 +15,6 @@ let package = Package(
         .target(
             name: "RSKImageCropper",
             path: "RSKImageCropper",
-            publicHeadersPath: "include"),
+            publicHeadersPath: nil),
     ]
 )
