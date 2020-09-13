@@ -15,6 +15,10 @@ let package = Package(
         .target(
             name: "RSKImageCropper",
             path: "RSKImageCropper",
-            publicHeadersPath: nil),
+            sources: ["Core", "Private"],
+            cSettings: [
+                .headerSearchPath("Core"),
+                .headerSearchPath("Private")
+            ]),
     ]
 )
